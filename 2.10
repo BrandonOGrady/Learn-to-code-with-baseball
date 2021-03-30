@@ -1,0 +1,6 @@
+dict: pitcher_info = {'starter': 'Kershaw', 'throws_right': False}
+
+go through each line and say whether it'll work without error:
+a) pitcher_info['era']: it will not work
+b) pitcher_info[starter]: it will not work
+c) pitcher_info['age'] = 32: it will work!
