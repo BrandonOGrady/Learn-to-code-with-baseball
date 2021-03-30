@@ -1,0 +1,12 @@
+Say we hava a dict: pitcher_info = {'starter': 'Kershaw', 'throws_right': False}
+a) how would you change 'starter' to 'Joe Kelly'?
+b) Write a function toggle_throws that takes a dict like pitcher_info, turns 'throws_right' to the opposite of whatever it is, and returns the updated settings dict.
+
+Answers:
+A) pitcher_info['starter'] = 'Joe Kelly'
+B) 
+def toggle_throws(pitcher):
+    pitcher['throws_right'] = not pitcher['throws_right']
+    return pitcher
+
+toggle_throws(pitcher_info)
