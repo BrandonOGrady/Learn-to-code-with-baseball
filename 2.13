@@ -1,0 +1,7 @@
+a) write a function mapper that takes a list and a function, applies the function to every item in the list and returns it.
+def mapper(my_list, my_function):
+  return [my_function(x) for x in my_list]
+  
+b) Assuming a 300 batting average, use mapper with an anonymous function to get a expected hits from the following number of a bats. Use the round so your projections are even numbers.
+list_of_atbats = [500, 410, 618, 288, 236]
+mapper(list_of_atbats, lambda x: int(x*0.300))
