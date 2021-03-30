@@ -5,5 +5,5 @@ my_roster_list = ['clayton kershaw', 'mookie betts', 'cody bellinger']
 for x in my_roster_list:
   print(x.split(' ')[-1])
   
-b) Write a comprehension that turns my_roster_dict into a list of just players who's last names start with 'b'
+b) Write a comprehension that uses my_roster_list to make a dict where the keys are the player names and the values are the length's of the strings
 {player: len(player) for player in my_roster_list}
