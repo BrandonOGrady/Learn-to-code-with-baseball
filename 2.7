@@ -1,0 +1,13 @@
+Write a function commentary_plus that works like commentary above but can also handle averages passed in decimal form (e.g. 0.275). Note it should still be able to handle non-decimal (275) too.)
+
+answer:
+def commentary_plus(x):
+    if x < 1:
+        x = int(x*1000)
+    if x >= 300:
+        return f'{x} is a good ave'
+    else:
+        return f"{x}'s not that good"
+commentary_plus(.100)
+commentary_plus(400)
+
