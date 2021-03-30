@@ -1,0 +1,9 @@
+list: my_roster_list = ['clayton kershaw', 'mookie betts', 'cody bellinger']
+
+a)Write a loop that goes through and prints the last name of every player in my_roster_list.
+my_roster_list = ['clayton kershaw', 'mookie betts', 'cody bellinger']
+for x in my_roster_list:
+  print(x.split(' ')[-1])
+  
+b) Write a comprehension that turns my_roster_dict into a list of just players who's last names start with 'b'
+{player: len(player) for player in my_roster_list}
