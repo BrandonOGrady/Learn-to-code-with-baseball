@@ -1,0 +1,10 @@
+dict: my_roster_dict = {
+    'p': 'clayton kershaw', 'rf': 'mookie betts', '1b': 'cody bellinger'}
+    
+a) Write a comprehension that turns 'my_roster_dict1 into a list of just the postions
+
+[i for i in my_roster_dict]
+
+b) Write a comprehension that turns my_roster_dict into a list of just players who's last names start with 'b'
+[player for _, player in my_roster_dict.items()
+    if player.split(' ')[-1][0] == 'b']
